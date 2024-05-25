@@ -32,6 +32,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ALEXANDRITE_AXE);
         handheldItem(ModItems.ALEXANDRITE_SHOVEL);
         handheldItem(ModItems.ALEXANDRITE_HOE);
+        handheldItem(ModItems.ALEXANDRITE_PAXEL);
+        handheldItem(ModItems.ALEXANDRITE_HAMMER);
+
+//        simpleItem(ModItems.ALEXANDRITE_HELMET);
+//        simpleItem(ModItems.ALEXANDRITE_CHESTPLATE);
+//        simpleItem(ModItems.ALEXANDRITE_LEGGINGS);
+//        simpleItem(ModItems.ALEXANDRITE_BOOTS);
+        simpleItem(ModItems.ALEXANDRITE_HORSE_ARMOR);
 
         buttonItem(ModBlocks.ALEXANDRITE_BUTTON, ModBlocks.ALEXANDRITE_BLOCK);
         fenceItem(ModBlocks.ALEXANDRITE_FENCE, ModBlocks.ALEXANDRITE_BLOCK);

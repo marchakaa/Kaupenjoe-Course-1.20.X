@@ -2,6 +2,7 @@ package net.marchakaa.mccourse;
 
 import com.mojang.logging.LogUtils;
 import net.marchakaa.mccourse.block.ModBlocks;
+import net.marchakaa.mccourse.enchantment.ModEnchantments;
 import net.marchakaa.mccourse.item.ModCreativeModeTabs;
 import net.marchakaa.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class MCCourseMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

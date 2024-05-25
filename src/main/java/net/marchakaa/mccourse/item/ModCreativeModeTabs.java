@@ -2,10 +2,12 @@ package net.marchakaa.mccourse.item;
 
 import net.marchakaa.mccourse.MCCourseMod;
 import net.marchakaa.mccourse.block.ModBlocks;
+import net.marchakaa.mccourse.enchantment.ModEnchantments;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -27,6 +29,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_SHOVEL.get());
                         output.accept(ModItems.ALEXANDRITE_AXE.get());
                         output.accept(ModItems.ALEXANDRITE_HOE.get());
+                        output.accept(ModItems.ALEXANDRITE_PAXEL.get());
+                        output.accept(ModItems.ALEXANDRITE_HAMMER.get());
+
+                        output.accept(ModItems.ALEXANDRITE_HELMET.get());
+                        output.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());
+                        output.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
+                        output.accept(ModItems.ALEXANDRITE_BOOTS.get());
+
+                        output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
@@ -47,6 +58,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_WALL.get());
                         output.accept(ModBlocks.ALEXANDRITE_DOOR.get());
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

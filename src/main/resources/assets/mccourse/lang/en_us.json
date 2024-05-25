@@ -9,6 +9,15 @@
   "item.mccourse.alexandrite_pickaxe": "Alexandrite Pickaxe",
   "item.mccourse.alexandrite_shovel": "Alexandrite Shovel",
   "item.mccourse.alexandrite_sword": "Alexandrite Sword",
+  "item.mccourse.alexandrite_paxel": "Alexandrite Paxel",
+  "item.mccourse.alexandrite_hammer": "Alexandrite Hammer",
+
+  "item.mccourse.alexandrite_helmet": "Alexandrite Helmet",
+  "item.mccourse.alexandrite_chestplate": "Alexandrite Chestplate",
+  "item.mccourse.alexandrite_leggings": "Alexandrite Leggings",
+  "item.mccourse.alexandrite_boots": "Alexandrite Boots",
+
+  "item.mccourse.alexandrite_horse_armor": "Alexandrite Horse Armor",
 
   "item.mccourse.metal_detector": "Metal Detector",
   "item.mccourse.metal_detector.no_valuables": "No valuables found!",
@@ -33,6 +42,8 @@
   "block.mccourse.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
 
   "creativetab.course_tab": "Course Tab",
+
+  "enchantment.mccourse.lightning_striker": "Lightning Striker",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more information",
