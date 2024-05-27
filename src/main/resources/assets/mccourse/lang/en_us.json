@@ -21,6 +21,13 @@
 
   "item.mccourse.metal_detector": "Metal Detector",
   "item.mccourse.metal_detector.no_valuables": "No valuables found!",
+  "item.mccourse.data_tablet": "Data Tablet",
+  "item.mccourse.kohlrabi_seeds": "Kohlrabi Seeds",
+
+  "item.mccourse.bar_brawl_record": "Bar Brawl Music Disc",
+  "item.mccourse.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.mccourse.vrgo_do_re_mi_record": "Do Re Mi",
+  "item.mccourse.vrgo_do_re_mi_record.desc": "V:RGO - Do Re Mi (DEVA)",
 
   "block.mccourse.alexandrite_stairs": "Alexandrite Stairs",
   "block.mccourse.alexandrite_slab": "Alexandrite Slab",
@@ -41,9 +48,14 @@
   "block.mccourse.nether_alexandrite_ore": "Nether Alexandrite Ore",
   "block.mccourse.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
 
+  "block.mccourse.alexandrite_lamp": "Alexandrite Lamp",
+  "block.mccourse.snapdragon": "Snapdragon",
+
   "creativetab.course_tab": "Course Tab",
 
   "enchantment.mccourse.lightning_striker": "Lightning Striker",
+
+  "sounds.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more information",

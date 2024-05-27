@@ -38,8 +38,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_BOOTS.get());
 
                         output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+                        output.accept(ModItems.DATA_TABLET.get());
+                        output.accept(ModItems.KOHLRABI_SEEDS.get());
+                        output.accept(ModItems.BAR_BRAWL_RECORD.get());
+                        output.accept(ModItems.VRGO_DO_RE_MI_RECORD.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
+
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
@@ -58,6 +63,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_WALL.get());
                         output.accept(ModBlocks.ALEXANDRITE_DOOR.get());
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
+
+                        output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
+                        output.accept(ModBlocks.SNAPDRAGON.get());
 
                     }).build());
 

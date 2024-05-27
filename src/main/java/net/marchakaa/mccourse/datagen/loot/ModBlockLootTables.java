@@ -1,10 +1,14 @@
 package net.marchakaa.mccourse.datagen.loot;
 
 import net.marchakaa.mccourse.block.ModBlocks;
+import net.marchakaa.mccourse.block.custom.KohlrabiCropBlock;
 import net.marchakaa.mccourse.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -42,6 +46,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ALEXANDRITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ALEXANDRITE_DOOR.get()));
 
+        this.dropSelf(ModBlocks.ALEXANDRITE_LAMP.get());
+
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.KOHLRABI_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(KohlrabiCropBlock.AGE, 6));
+        this.add(ModBlocks.KOHLRABI_CROP.get(), this.createCropDrops(ModBlocks.KOHLRABI_CROP.get(),
+                ModItems.KOHLRABI.get(), ModItems.KOHLRABI_SEEDS.get(), lootitemcondition$builder1));
+
+        this.dropSelf(ModBlocks.SNAPDRAGON.get());
+        this.add(ModBlocks.POTTED_SNAPDRAGON.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_SNAPDRAGON.get()));
     }
 
     @Override

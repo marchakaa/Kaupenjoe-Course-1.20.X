@@ -1,7 +1,9 @@
 package net.marchakaa.mccourse.item;
 
 import net.marchakaa.mccourse.MCCourseMod;
+import net.marchakaa.mccourse.block.ModBlocks;
 import net.marchakaa.mccourse.item.custom.*;
+import net.marchakaa.mccourse.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -55,6 +57,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> ALEXANDRITE_HORSE_ARMOR = ITEMS.register("alexandrite_horse_armor",
             () -> new HorseArmorItem(12, new ResourceLocation(MCCourseMod.MOD_ID, "textures/entity/horse/armor/horse_armor_alexandrite.png"), new Item.Properties()));
+
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> BAR_BRAWL_RECORD = ITEMS.register("bar_brawl_record",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2440));
+
+    public static final RegistryObject<Item> VRGO_DO_RE_MI_RECORD = ITEMS.register("vrgo_do_re_mi_record",
+            () -> new RecordItem(4, ModSounds.VRGO_DO_RE_MI, new Item.Properties().stacksTo(1), 3700));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

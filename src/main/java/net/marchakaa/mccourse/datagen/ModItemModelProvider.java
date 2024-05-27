@@ -40,12 +40,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        simpleItem(ModItems.ALEXANDRITE_LEGGINGS);
 //        simpleItem(ModItems.ALEXANDRITE_BOOTS);
         simpleItem(ModItems.ALEXANDRITE_HORSE_ARMOR);
+//        simpleItem(ModItems.DATA_TABLET);
+        simpleItem(ModItems.KOHLRABI_SEEDS);
+        simpleItem(ModItems.BAR_BRAWL_RECORD);
+        simpleItem(ModItems.VRGO_DO_RE_MI_RECORD);
 
         buttonItem(ModBlocks.ALEXANDRITE_BUTTON, ModBlocks.ALEXANDRITE_BLOCK);
         fenceItem(ModBlocks.ALEXANDRITE_FENCE, ModBlocks.ALEXANDRITE_BLOCK);
         wallItem(ModBlocks.ALEXANDRITE_WALL, ModBlocks.ALEXANDRITE_BLOCK);
 
         simpleBlockItem(ModBlocks.ALEXANDRITE_DOOR);
+        simpleBlockItem(ModBlocks.SNAPDRAGON);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
