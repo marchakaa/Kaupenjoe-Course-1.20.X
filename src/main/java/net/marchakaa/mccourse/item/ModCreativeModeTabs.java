@@ -42,6 +42,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KOHLRABI_SEEDS.get());
                         output.accept(ModItems.BAR_BRAWL_RECORD.get());
                         output.accept(ModItems.VRGO_DO_RE_MI_RECORD.get());
+                        output.accept(ModItems.RADIATION_STAFF.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
 
@@ -66,6 +67,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
                         output.accept(ModBlocks.SNAPDRAGON.get());
+                        output.accept(ModBlocks.GEM_EMPOWERING_STATION.get());
 
                     }).build());
 

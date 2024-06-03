@@ -70,6 +70,10 @@ public class ModItems {
     public static final RegistryObject<Item> VRGO_DO_RE_MI_RECORD = ITEMS.register("vrgo_do_re_mi_record",
             () -> new RecordItem(4, ModSounds.VRGO_DO_RE_MI, new Item.Properties().stacksTo(1), 3700));
 
+
+    public static final RegistryObject<Item> RADIATION_STAFF = ITEMS.register("radiation_staff",
+            () -> new Item(new Item.Properties().durability(1024)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

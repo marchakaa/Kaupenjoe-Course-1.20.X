@@ -2,6 +2,7 @@ package net.marchakaa.mccourse.block;
 
 import net.marchakaa.mccourse.MCCourseMod;
 import net.marchakaa.mccourse.block.custom.AlexandriteLampBlock;
+import net.marchakaa.mccourse.block.custom.GemEmpoweringStationBlock;
 import net.marchakaa.mccourse.block.custom.KohlrabiCropBlock;
 import net.marchakaa.mccourse.block.custom.SoundBlock;
 import net.marchakaa.mccourse.item.ModItems;
@@ -84,6 +85,9 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.BLINDNESS, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
     public static final RegistryObject<Block> POTTED_SNAPDRAGON = BLOCKS.register("potted_snapdragon",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), SNAPDRAGON, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
+    public static final RegistryObject<Block> GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
+            () -> new GemEmpoweringStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T>  registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
