@@ -1,10 +1,7 @@
 package net.marchakaa.mccourse.block;
 
 import net.marchakaa.mccourse.MCCourseMod;
-import net.marchakaa.mccourse.block.custom.AlexandriteLampBlock;
-import net.marchakaa.mccourse.block.custom.GemEmpoweringStationBlock;
-import net.marchakaa.mccourse.block.custom.KohlrabiCropBlock;
-import net.marchakaa.mccourse.block.custom.SoundBlock;
+import net.marchakaa.mccourse.block.custom.*;
 import net.marchakaa.mccourse.item.ModItems;
 import net.marchakaa.mccourse.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
@@ -88,6 +85,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
             () -> new GemEmpoweringStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> SINGLE_STORAGE_BLOCK = registerBlock("single_storage_block",
+            () -> new SingleStorageBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T>  registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

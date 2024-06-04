@@ -66,6 +66,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         horizontalBlock(ModBlocks.GEM_EMPOWERING_STATION.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_empowering_station")));
 
+        horizontalBlock(ModBlocks.SINGLE_STORAGE_BLOCK.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/single_storage_block")));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

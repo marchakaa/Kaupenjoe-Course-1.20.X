@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mccourse:block/single_storage_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mccourse:block/single_storage_block"
+    },
+    "facing=south": {
+      "model": "mccourse:block/single_storage_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mccourse:block/single_storage_block",
+      "y": 270
+    }
+  }
+}

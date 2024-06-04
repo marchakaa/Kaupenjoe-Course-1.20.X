@@ -54,6 +54,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         complexBlock(ModBlocks.GEM_EMPOWERING_STATION.get());
+        complexBlock(ModBlocks.SINGLE_STORAGE_BLOCK.get());
     }
 
     private ItemModelBuilder complexBlock(Block block) {
