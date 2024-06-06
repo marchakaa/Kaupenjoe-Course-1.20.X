@@ -32,6 +32,10 @@
   "item.mccourse.vrgo_do_re_mi_record": "Do Re Mi",
   "item.mccourse.vrgo_do_re_mi_record.desc": "V:RGO - Do Re Mi (DEVA)",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
   "block.mccourse.alexandrite_stairs": "Alexandrite Stairs",
   "block.mccourse.alexandrite_slab": "Alexandrite Slab",
   "block.mccourse.alexandrite_button": "Alexandrite Button",
@@ -61,6 +65,15 @@
   "enchantment.mccourse.lightning_striker": "Lightning Striker",
 
   "sounds.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore",
+
+  "effect.mccourse.slimey": "Slimey",
+
+  "painting.mccourse.world.title": "World",
+  "painting.mccourse.world.author": "NanoAttack",
+  "painting.mccourse.shrimp.title": "Shrimp",
+  "painting.mccourse.shrimp.author": "NanoAttack",
+  "painting.mccourse.saw_them.title": "Saw Them",
+  "painting.mccourse.saw_them.author": "NanoAttack",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more information",
