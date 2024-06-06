@@ -9,9 +9,11 @@ import net.marchakaa.mccourse.item.ModItemProperties;
 import net.marchakaa.mccourse.item.ModItems;
 import net.marchakaa.mccourse.loot.ModLootModifiers;
 import net.marchakaa.mccourse.painting.ModPaintings;
+import net.marchakaa.mccourse.particle.ModParticles;
 import net.marchakaa.mccourse.potion.BetterBrewingRecipe;
 import net.marchakaa.mccourse.potion.ModPotions;
 import net.marchakaa.mccourse.sound.ModSounds;
+import net.marchakaa.mccourse.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
@@ -55,6 +57,9 @@ public class MCCourseMod {
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
+        ModParticles.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
