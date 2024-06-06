@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.KOHLRABI_SEEDS);
         simpleItem(ModItems.BAR_BRAWL_RECORD);
         simpleItem(ModItems.VRGO_DO_RE_MI_RECORD);
+        simpleItem(ModItems.SOAP_WATER_BUCKET);
 
         buttonItem(ModBlocks.ALEXANDRITE_BUTTON, ModBlocks.ALEXANDRITE_BLOCK);
         fenceItem(ModBlocks.ALEXANDRITE_FENCE, ModBlocks.ALEXANDRITE_BLOCK);

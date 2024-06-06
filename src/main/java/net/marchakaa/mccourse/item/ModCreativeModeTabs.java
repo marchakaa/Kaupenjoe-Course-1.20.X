@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_HAMMER.get());
                         output.accept(ModItems.ALEXANDRITE_BOW.get());
                         output.accept(ModItems.ALEXANDRITE_SHIELD.get());
+                        output.accept(ModItems.SOAP_WATER_BUCKET.get());
 
                         output.accept(ModItems.ALEXANDRITE_HELMET.get());
                         output.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());

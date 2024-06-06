@@ -2,6 +2,7 @@ package net.marchakaa.mccourse.block;
 
 import net.marchakaa.mccourse.MCCourseMod;
 import net.marchakaa.mccourse.block.custom.*;
+import net.marchakaa.mccourse.fluid.ModFluids;
 import net.marchakaa.mccourse.item.ModItems;
 import net.marchakaa.mccourse.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
@@ -87,6 +88,9 @@ public class ModBlocks {
             () -> new GemEmpoweringStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> SINGLE_STORAGE_BLOCK = registerBlock("single_storage_block",
             () -> new SingleStorageBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<LiquidBlock> SOAP_WATER_BLOCK = BLOCKS.register("soap_water_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_SOAP_WATER, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
     private static <T extends Block> RegistryObject<T>  registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
