@@ -2,6 +2,7 @@ package net.marchakaa.mccourse;
 
 import com.mojang.logging.LogUtils;
 import net.marchakaa.mccourse.block.ModBlocks;
+import net.marchakaa.mccourse.block.entity.ModBlockEntities;
 import net.marchakaa.mccourse.effect.ModEffects;
 import net.marchakaa.mccourse.enchantment.ModEnchantments;
 import net.marchakaa.mccourse.fluid.ModFluidTypes;
@@ -14,8 +15,11 @@ import net.marchakaa.mccourse.painting.ModPaintings;
 import net.marchakaa.mccourse.particle.ModParticles;
 import net.marchakaa.mccourse.potion.BetterBrewingRecipe;
 import net.marchakaa.mccourse.potion.ModPotions;
+import net.marchakaa.mccourse.screen.GemEmpoweringStationScreen;
+import net.marchakaa.mccourse.screen.ModMenuTypes;
 import net.marchakaa.mccourse.sound.ModSounds;
 import net.marchakaa.mccourse.villager.ModVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -68,6 +72,9 @@ public class MCCourseMod {
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -114,6 +121,8 @@ public class MCCourseMod {
 
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
+
+                MenuScreens.register(ModMenuTypes.GEM_EMPOWERING_MENU.get(), GemEmpoweringStationScreen::new);
             });
         }
     }
